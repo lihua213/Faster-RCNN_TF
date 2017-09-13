@@ -26,7 +26,7 @@ def parse_args():
     """
     parser = argparse.ArgumentParser(description='Train a Fast R-CNN network')
     parser.add_argument('--device', dest='device', help='device to use',
-                        default='cpu', type=str)
+                        default='gpu', type=str)
     parser.add_argument('--device_id', dest='device_id', help='device id to use',
                         default=0, type=int)
     parser.add_argument('--solver', dest='solver',
